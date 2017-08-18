@@ -1,0 +1,63 @@
+/* Style sheet
+Orange: EF773B
+Yellow: E2D74A
+Pink: CF215E
+Teal: 0A5F5C
+Brown: 2E2E30
+*/
+
+body {
+  font-size: 10px;
+}
+
+#wrapper {
+  	margin: 0 auto;
+    max-width: 960px;
+}
+
+.banner h1 {
+  font-family: 'Monoton', cursive;
+  color: #EF773B;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.brand-logo {
+  font-family:'Monoton', cursive;
+}
+
+.homepage-button {
+  margin-top: 20px;
+}
+
+.right {
+  float: right;
+}
+
+.gallery h3 {
+  color: #CF215E;
+  font-size: 20px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 440px) {
+  #wrapper {
+
+  }
+  .banner h1 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 440px) {
+  .brand-logo {
+    margin-left: 10px;
+  }
+}
+
+
+/* //////////////////////////////// */

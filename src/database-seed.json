@@ -1,0 +1,26 @@
+{
+	"stores": [
+		{
+			"name": "Buffalo Exchange",
+			"image": "http://i.imgur.com/LyWs3Sn.jpg",
+			"rating": "1",
+			"priceRange": "2",
+			"address1": "1478 N Milwaukee Ave",
+			"address2": "",
+			"city": "Chicago",
+			"state": "IL",
+			"zipCode": "60622"
+		},
+	 	{
+			"name": "Goodwill",
+      "image": "http://i.imgur.com/LyWs3Sn.jpg",
+      "rating": "3",
+      "priceRange": "4",
+      "address1": "123 Yahoo Lane",
+      "address2": "Apt 2",
+      "city": "Chicago",
+      "state": "IL",
+      "zipCode": "60613"
+		}
+	]
+}
