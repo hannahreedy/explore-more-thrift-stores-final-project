@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import firebase from './Firebase.js';
 import './App.css';
-import {Modal} from 'react-materialize'
-import {Button, Row, Input} from 'react-materialize'
+import {Button, Row, Input, Modal} from 'react-materialize'
 
 class SubmitForm extends Component {
   constructor() {

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import firebase from './Firebase.js';
 import './App.css';
-import {Modal} from 'react-materialize'
-import {Card, CardTitle} from 'react-materialize'
+import {Card, CardTitle, Row, Col} from 'react-materialize'
 
 
 class Gallery extends Component {
@@ -33,6 +31,8 @@ class Gallery extends Component {
           city: stores[store].city,
           state: stores[store].state,
           zipCode: stores[store].zipCode,
+          url: stores[store].url,
+          description: stores[store].description
         })
       }
       this.setState({
@@ -48,7 +48,7 @@ class Gallery extends Component {
         <div key={store.name}>
         <Card header={<CardTitle reveal image={store.image} waves='light'/>}
         		title={store.name}
-        		reveal={<p>{store.address1} {store.address2}<br />{store.city} {store.state} {store.zipCode}<br />{store.rating}<br />{store.priceRange}</p>}>
+        		reveal={<div className='gallery-card'><Row><Col s={12} className='grid-example'><h3>{store.address1} {store.address2}</h3></Col></Row><Row><Col s={12} className='grid-example'><h3>{store.city}, {store.state} {store.zipCode}</h3></Col></Row><Row><Col s={6} className='grid-example'>{store.rating}</Col><Col s={6} className='grid-example'>{store.priceRange}</Col></Row><Row><Col s={12} className='grid-example'>{store.description}</Col></Row><Row><Col s={12} className='grid-example'>{store.url}</Col></Row></div>}>
         </Card>
         </div>
       )
@@ -56,7 +56,9 @@ class Gallery extends Component {
     console.log('Current App State:', this.state);
     return (
       <div className="App" id='wrapper'>
-          {gallery}
+          <Col s={6} className='grid-example'>
+            {gallery}
+          </Col>
       </div>
     );
   }

@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import firebase from './Firebase.js';
 import './App.css';
-import {Modal} from 'react-materialize'
-import {Card, CardTitle, Input, Button, Row} from 'react-materialize'
 import Gallery from './Gallery.js';
 import SubmitForm from './SubmitForm.js';
+import {Row, Col} from 'react-materialize'
 
 class App extends Component {
   render() {
     console.log('render() called');
     return (
       <div>
-        <Gallery />
+        <Row>
+          <Gallery />
+        </Row>
         <SubmitForm />
       </div>
     )

@@ -2,9 +2,9 @@
 	"stores": [
 		{
 			"name": "Buffalo Exchange",
-			"image": "http://i.imgur.com/LyWs3Sn.jpg",
-			"rating": "1",
-			"priceRange": "2",
+			"image": "https://www.buffaloexchange.com/wp-content/uploads/PA1_Philadelphia_2.jpg",
+			"rating": "4",
+			"priceRange": "3",
 			"address1": "1478 N Milwaukee Ave",
 			"address2": "",
 			"city": "Chicago",
@@ -13,14 +13,80 @@
 		},
 	 	{
 			"name": "Goodwill",
-      "image": "http://i.imgur.com/LyWs3Sn.jpg",
+      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
       "rating": "3",
-      "priceRange": "4",
-      "address1": "123 Yahoo Lane",
-      "address2": "Apt 2",
-      "city": "Chicago",
+      "priceRange": "1",
+      "address1": "1916B Dempster St",
+      "address2": "",
+      "city": "Evanston",
       "state": "IL",
-      "zipCode": "60613"
+      "zipCode": "60202"
+		},
+		{
+			"name": "Goodwill 1",
+      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
+      "rating": "3",
+      "priceRange": "1",
+      "address1": "1916B Dempster St",
+      "address2": "",
+      "city": "Evanston",
+      "state": "IL",
+      "zipCode": "60202"
+		},
+		{
+			"name": "Goodwill 2",
+      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
+      "rating": "3",
+      "priceRange": "1",
+      "address1": "1916B Dempster St",
+      "address2": "",
+      "city": "Evanston",
+      "state": "IL",
+      "zipCode": "60202"
+		},
+		{
+			"name": "Goodwill 3",
+      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
+      "rating": "3",
+      "priceRange": "1",
+      "address1": "1916B Dempster St",
+      "address2": "",
+      "city": "Evanston",
+      "state": "IL",
+      "zipCode": "60202"
+		},
+		{
+			"name": "Goodwill 4",
+      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
+      "rating": "3",
+      "priceRange": "1",
+      "address1": "1916B Dempster St",
+      "address2": "",
+      "city": "Evanston",
+      "state": "IL",
+      "zipCode": "60202"
+		},
+		{
+			"name": "Goodwill 5",
+      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
+      "rating": "3",
+      "priceRange": "1",
+      "address1": "1916B Dempster St",
+      "address2": "",
+      "city": "Evanston",
+      "state": "IL",
+      "zipCode": "60202"
+		},
+		{
+			"name": "Goodwill 6",
+      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
+      "rating": "3",
+      "priceRange": "1",
+      "address1": "1916B Dempster St",
+      "address2": "",
+      "city": "Evanston",
+      "state": "IL",
+      "zipCode": "60202"
 		}
 	]
 }
