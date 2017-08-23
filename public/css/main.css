@@ -54,12 +54,20 @@ Brown: 2E2E30
 
 /* //////////////////////////////// */
 
-.gallery-card, .card-title, .page-footer{
+.gallery-card, .card-title, .page-footer, body, p {
   font-family: 'Raleway', sans-serif;
 }
 
 .gallery-card {
-    font-size: 2rem;
+    font-size: 1.6rem;
+}
+
+.card-title {
+  font-size: 1.6rem;
+}
+
+.grid-example {
+  padding: auto 0 auto 0;
 }
 
 /*.card-title {
@@ -72,14 +80,8 @@ Brown: 2E2E30
 
 body {
   font-size: 10px;
-  font-family: 'Raleway', sans-serif;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.3rem;
-}
-
-image {
-  width: 50px;
 }
