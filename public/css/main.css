@@ -48,6 +48,7 @@ Brown: 2E2E30
   height: 400px;
 }
 
+/* My title is still getting covered by my overlay. How do I adjust the order of layers? */
 .title-desktop {
   text-shadow: 1px 1px 1px #000;
   margin: 0 auto;
