@@ -3,6 +3,14 @@ import './App.css';
 import {Button, Row, Input, Modal} from 'react-materialize'
 import firebase from './Firebase.js';
 
+// QUESTIONS FOR KATIE
+    //I would love to adjust the close button from the bottom right and change it to an 'x' icon in the top right corner. How do I go about doing this? (not a dealbreaker if it's too complex)
+    // I also need to add in a confirmed message, and I would like it to live in the modal. How do I go about doing this?
+
+// QUESTIONS FOR JAMES/KATIE
+    // Honestly though... why isn't this form connected to Firebase?
+
+
 class SubmitForm extends Component {
   constructor() {
     console.log('constructor() Called');
