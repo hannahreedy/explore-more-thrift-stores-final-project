@@ -3,90 +3,123 @@
 		{
 			"name": "Buffalo Exchange",
 			"image": "https://www.buffaloexchange.com/wp-content/uploads/PA1_Philadelphia_2.jpg",
-			"rating": "4",
 			"priceRange": "3",
 			"address1": "1478 N Milwaukee Ave",
 			"address2": "",
 			"city": "Chicago",
 			"state": "IL",
-			"zipCode": "60622"
+			"zipCode": "60622",
+			"url": "https://www.buffaloexchange.com/"
 		},
 	 	{
 			"name": "Goodwill",
       "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
-      "rating": "3",
       "priceRange": "1",
       "address1": "1916B Dempster St",
       "address2": "",
       "city": "Evanston",
       "state": "IL",
-      "zipCode": "60202"
+      "zipCode": "60202",
+			"url": "http://www.goodwillchicago.com/"
 		},
 		{
-			"name": "Goodwill 1",
-      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
-      "rating": "3",
+			"name": "The Brown Elephant - Andersonville",
+      "image": "https://s3-media3.fl.yelpcdn.com/bphoto/rR7FzQ7dNnJcOzUgWHocxQ/o.jpg",
       "priceRange": "1",
-      "address1": "1916B Dempster St",
+      "address1": " 5404 N Clark St",
       "address2": "",
-      "city": "Evanston",
+      "city": "Chicago",
       "state": "IL",
-      "zipCode": "60202"
+      "zipCode": "60640",
+			"url": "https://howardbrown.org/brown-elephant/"
 		},
 		{
-			"name": "Goodwill 2",
-      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
-      "rating": "3",
-      "priceRange": "1",
-      "address1": "1916B Dempster St",
+			"name": "Crossroads Trading Co.",
+      "image": "https://media.timeout.com/images/103001893/750/422/image.jpg",
+      "priceRange": "2",
+      "address1": "2711 N Clark St",
       "address2": "",
-      "city": "Evanston",
+      "city": "Chicago",
       "state": "IL",
-      "zipCode": "60202"
+      "zipCode": "60614",
+			"url": "https://crossroadstrading.com/"
 		},
 		{
-			"name": "Goodwill 3",
-      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
-      "rating": "3",
+			"name": "Encore Resale Clothing",
+      "image": "https://media.timeout.com/images/101901071/750/422/image.jpg",
       "priceRange": "1",
-      "address1": "1916B Dempster St",
+      "address1": "1553 E Hyde Park Blvd",
       "address2": "",
-      "city": "Evanston",
+      "city": "Chicago",
       "state": "IL",
-      "zipCode": "60202"
+      "zipCode": "60615",
+			"url": "https://www.facebook.com/shopencoreresale/"
 		},
 		{
-			"name": "Goodwill 4",
-      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
-      "rating": "3",
+			"name": "The Silver Umbrella",
+      "image": "https://media.timeout.com/images/103470042/750/422/image.jpg",
       "priceRange": "1",
-      "address1": "1916B Dempster St",
+      "address1": "5305 S Hyde Park Blvd",
       "address2": "",
-      "city": "Evanston",
+      "city": "Chicago",
       "state": "IL",
-      "zipCode": "60202"
+      "zipCode": "60615",
+			"url": "http://thesilverumbrella.com/"
 		},
 		{
-			"name": "Goodwill 5",
-      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
-      "rating": "3",
+			"name": "Green Element Resale",
+      "image": "https://media.timeout.com/images/101901113/750/422/image.jpg",
       "priceRange": "1",
-      "address1": "1916B Dempster St",
+      "address1": "6241 N Broadway St",
       "address2": "",
-      "city": "Evanston",
+      "city": "Chicago",
       "state": "IL",
-      "zipCode": "60202"
+      "zipCode": "60660",
+			"url": "http://greenelementresale.com/"
 		},
 		{
-			"name": "Goodwill 6",
-      "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
-      "rating": "3",
+			"name": "Thrift & Thrive",
+      "image": "https://media.timeout.com/images/101890503/750/422/image.jpg",
       "priceRange": "1",
-      "address1": "1916B Dempster St",
+      "address1": "6025 W Irving Park Rd",
       "address2": "",
-      "city": "Evanston",
+      "city": "Chicago",
       "state": "IL",
-      "zipCode": "60202"
+      "zipCode": "60634",
+			"url": "http://thriftnthrive.com/"
+		},
+		{
+			"name": "New Elephant Resale",
+			"image": "https://media.timeout.com/images/102270431/750/422/image.jpg",
+			"priceRange": "1",
+			"address1": "2325 N Clark St",
+			"address2": "",
+			"city": "Chicago",
+			"state": "IL",
+			"zipCode": "60614",
+			"url": "http://www.newelephantresaleshopofchicago.org/"
+		},
+		{
+			"name": "Krispyfringe Vintage",
+			"image": "https://media.timeout.com/images/103470052/750/422/image.jpg",
+			"priceRange": "3",
+			"address1": "2130 W Chicago Ave",
+			"address2": "",
+			"city": "Chicago",
+			"state": "IL",
+			"zipCode": "60622",
+			"url": "http://krispyfringe.com/"
+		},
+		{
+			"name": "Second Chance Thrift",
+			"image": "https://revivecenter.org/wp-content/uploads/2014/04/SCT1-488x385.jpg",
+			"priceRange": "2",
+			"address1": "1674 Ogden Ave",
+			"address2": "",
+			"city": "Chicago",
+			"state": "IL",
+			"zipCode": "60612",
+			"url": "https://revivecenter.org/our-store/"
 		}
 	]
 }

@@ -115,16 +115,21 @@ MEDIA QUERIES */
   font-size: 1.6rem;
 }
 
-.website-url {
+.rating {
   text-align: left;
   font-size: .1rem;
-  color: #CF215E;
 }
 
 .address {
   font-size: .1rem;
   text-align: left;
   margin: 0;
+}
+
+.website-url {
+  text-align: left;
+  font-size: .1rem;
+  color: #CF215E;
 }
 
 .submit-form {

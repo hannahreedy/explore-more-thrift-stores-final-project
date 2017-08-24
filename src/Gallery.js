@@ -12,6 +12,7 @@ class Gallery extends Component {
       stores: []
     }
   }
+
   componentDidMount() {
     console.log('componentDidMount() called');
     const storesReference = firebase.database().ref('stores');
@@ -48,8 +49,8 @@ class Gallery extends Component {
         <div key={store.name}>
         <Card header={<CardTitle reveal image={store.image} waves='light'/>}
         		title={store.name}
-        		reveal={<div className='gallery-card'><Row><Col s={12} className='grid-example'><p className='address'>{store.address1} {store.address2}</p></Col><Col s={12} className='grid-example'><p className='address'>{store.city}, {store.state} {store.zipCode}</p></Col></Row><Row><Col s={6} className='grid-example'>Rating: {store.rating}</Col><Col s={6} className='grid-example'>Price Range: {store.priceRange}</Col></Row></div>}>
-            <p className='website-url'><a href="{store.url}">{store.name} Website</a></p>
+        		reveal={<div className='gallery-card'><Row><Col s={12} className='grid-example'><p className='address'>{store.address1} {store.address2}</p></Col><Col s={12} className='grid-example'><p className='address'>{store.city}, {store.state} {store.zipCode}</p></Col></Row><Row><Col s={12} className='grid-example'><p className='website-url'><a href="{store.url}">{store.name} Website</a></p></Col></Row></div>}>
+            <p className='rating'>Price Range: {store.priceRange}</p>
         </Card>
         </div>
       )

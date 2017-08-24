@@ -1,40 +1,60 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Button, Row, Input, Modal} from 'react-materialize'
+import firebase from './Firebase.js';
 
 class SubmitForm extends Component {
   constructor() {
+    console.log('constructor() Called');
     super();
+    this.state = {
+      stores: []
+    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleChange(e) {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  }
+  handleSubmit(e) {
+    this.preventDefault();
+    const storesReference = firebase.database().ref('stores');
+    const store = {
+      name: this.state.name,
+			image: this.state.image,
+			priceRange: this.state.priceRange,
+			address1: this.state.address1,
+			address2: this.state.address2,
+			city: this.state.city,
+			state: this.state.state,
+			zipCode: this.state.zipCode,
+			url: this.state.url
+    }
   }
   render() {
     return (
       <Modal
         header='Submit your favorite thrift store'
         trigger={<Button className='material-icons'>launch</Button>}>
-        <Row>
-          <Input s={12} label="Image Path" type='url' />
-          <Input s={12} label="Store Name" type='text' />
-          <Input s={6} type='select' label="Rating">
-            <option value='1'>1</option>
-            <option value='2'>2</option>
-            <option value='3'>3</option>
-            <option value='4'>4</option>
-            <option value='5'>5</option>
-          </Input>
-          <Input s={6} type='select' label="Price Range">
+        <Row onSubmit={this.handleSubmit}>
+          <Input s={12} label="Image Path" type='url' onChange={this.handleChange} value={this.state.image} />
+          <Input s={12} label="Store Name" type='text' onChange={this.handleChange} value={this.state.name} />
+          <Input s={12} type='select' label="Price Range" onChange={this.handleChange} value={this.state.priceRange} >
             <option value='1'>$</option>
             <option value='2'>$$</option>
             <option value='3'>$$$</option>
             <option value='4'>$$$$</option>
           </Input>
-          <Input s={6} label="Address" />
-          <Input s={6} label="Address 2" />
-          <Input s={4} label="City" />
-          <Input s={4} label="State" />
-          <Input s={4} label="Zip Code" />
+          <Input s={6} label="Address" onChange={this.handleChange} value={this.state.address1} />
+          <Input s={6} label="Address 2" onChange={this.handleChange} value={this.state.address2} />
+          <Input s={4} label="City" onChange={this.handleChange} value={this.state.city} />
+          <Input s={4} label="State" onChange={this.handleChange} value={this.state.state} />
+          <Input s={4} label="Zip Code" onChange={this.handleChange} value={this.state.zipCode} />
         </Row>
         <Row>
-          <Input s={12} label="Website URL" type='url' />
+          <Input s={12} label="Website URL" type='url' onChange={this.handleChange} value={this.state.url} />
         </Row>
         <Button>Submit</Button>
       </Modal>
