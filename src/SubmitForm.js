@@ -10,20 +10,10 @@ class SubmitForm extends Component {
     return (
       <Modal
         header='Submit your favorite thrift store'
-        trigger={<Button>Submit a thrift store</Button>}>
-        <form action="#">
-          <div className="file-field input-field">
-            <div className="btn">
-              <span>File</span>
-              <input type='images' multiple />
-            </div>
-            <div className="file-path-wrapper">
-              <input className="file-path validate" type="text" placeholder="Upload one or more images" />
-            </div>
-          </div>
-        </form>
+        trigger={<Button className='material-icons'>launch</Button>}>
         <Row>
-          <Input s={12} label="Store Name" />
+          <Input s={12} label="Image Path" type='url' />
+          <Input s={12} label="Store Name" type='text' />
           <Input s={6} type='select' label="Rating">
             <option value='1'>1</option>
             <option value='2'>2</option>
@@ -42,6 +32,9 @@ class SubmitForm extends Component {
           <Input s={4} label="City" />
           <Input s={4} label="State" />
           <Input s={4} label="Zip Code" />
+        </Row>
+        <Row>
+          <Input s={12} label="Website URL" type='url' />
         </Row>
         <Button>Submit</Button>
       </Modal>

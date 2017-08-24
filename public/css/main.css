@@ -7,8 +7,31 @@ Brown: 2E2E30
 */
 
 #wrapper {
-  	margin: 0 auto;
-    max-width: 960px;
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+#wrapper h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+#wrapper h2 {
+  font-size: 1.7rem;
+  color: #EF773B;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+#wrapper p {
+  font-size: 1rem;
+}
+
+.container {
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .navigation img {
@@ -19,69 +42,155 @@ Brown: 2E2E30
   overflow: hidden;
 }
 
-.banner h1 {
-  font-family: 'Monoton', cursive;
-  color: #EF773B;
-  font-size: 3rem;
-  text-align: center;
+.banner {
+  background: url(../images/store.jpg) no-repeat center center;
+  background-size: cover;
+  height: 400px;
 }
 
-.banner img {
-  max-width: 100%;
+.title-desktop {
+  text-shadow: 1px 1px 1px #000;
+  margin: 0 auto;
+  max-width: 960px;
+  z-index: 1;
 }
+
+.title-mobile {
+  text-shadow: 1px 1px 1px #000;
+  margin: 0 auto;
+  max-width: 960px;
+  z-index: 1;
+}
+
+.overlay {
+  height: 400px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 64px;
+  z-index: 0;
+}
+
+/* ==========================================================================
+MEDIA QUERIES */
+/*DESKTOP STUFF*/
+@media only screen and (min-width: 726px) {
+  .title-desktop {
+    padding-top: 350px;
+  }
+  .title-mobile{
+    display: none;
+  }
+}
+/*MOBILE STUFF*/
+@media only screen and (max-width: 725px) {
+  .title-desktop {
+    display: none;
+  }
+  .title-mobile {
+    padding-top: 300px;
+  }
+}
+
+/*==========================================================================*/
 
 .gallery h3 {
   color: #CF215E;
   font-size: 2rem;
 }
 
-/* MEDIA QUERIES
-@media only screen and (max-width: 440px) {
-  #wrapper {
-
-  }
-  .banner h1 {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (min-width: 440px) {
-  .brand-logo {
-    margin-left: 10px;
-  }
-}
-
-
-/* //////////////////////////////// */
-
 .gallery-card, .card-title, .page-footer, body, p {
   font-family: 'Raleway', sans-serif;
 }
 
 .gallery-card {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.card {
+  text-align: left;
 }
 
 .card-title {
   font-size: 1.6rem;
 }
 
-.grid-example {
-  padding: auto 0 auto 0;
+.website-url {
+  text-align: left;
+  font-size: .1rem;
+  color: #CF215E;
 }
 
-/*.card-title {
-  font-family: 'Raleway', sans-serif;
-}*/
+.address {
+  font-size: .1rem;
+  text-align: left;
+  margin: 0;
+}
 
-/*.material-icons {
-  color: #CF215E;
-}*/
+.submit-form {
+  position: fixed;
+  bottom: 0;
+  right: 1%;
+  z-index: 2
+}
+
+.modal {
+  font-family: 'Raleway', sans-serif;
+}
+
+.modal h4 {
+  font-size: 1.4rem;
+  /*font-family: 'Raleway', sans-serif;*/
+  color: #EF773B;
+  text-align: center;
+}
+
+/* ==========================================================================
+MEDIA QUERIES */
+/*DESKTOP STUFF*/
+@media only screen and (min-width: 441px) {
+  .submit-button-desktop {
+    display: none;
+  }
+  .submit-button-mobile {
+    display: none;
+  }
+}
+/*MOBILE STUFF*/
+@media only screen and (max-width: 440px) {
+  .submit-button-desktop {
+    display: none;
+  }
+  .submit-button-mobile {
+    display: none;
+  }
+}
+/*==========================================================================*/
+
+.footer-copyright p {
+  text-align: left;
+}
+
+.footer-copyright a {
+  color: #fff;
+  text-decoration: underline;
+}
 
 body {
   font-size: 10px;
 }
 
+h1 {
+  font-family: 'Monoton', cursive;
+  color: #EF773B;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
 p {
-  font-size: 1.3rem;
+  text-align: center;
 }

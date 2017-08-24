@@ -12,7 +12,9 @@ class App extends Component {
         <Row>
           <Gallery />
         </Row>
-        <SubmitForm />
+        <div className='submit-form'>
+          <SubmitForm />
+        </div>
       </div>
     )
   }

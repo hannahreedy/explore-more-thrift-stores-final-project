@@ -25,10 +25,6 @@
   </head>
 
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-
     <header class="navigation">
       <nav>
         <div class="nav-wrapper">
@@ -37,30 +33,31 @@
         </div>
       </nav>
     </header>
-    <div id='wrapper' class='container'>
+    <div id='wrapper'>
       <section>
           <article class='banner'>
-            <img src='images/header.jpg' alt='Thrift store' />
-            <!--<h1>Explore More Thrift Stores</h1>-->
+            <div class="overlay"></div>
+            <h1 class='title-desktop'>Explore More Thrift Stores</h1>
+            <h1 class='title-mobile'>Explore More<br />Thrift Stores</h1>
           </article>
-          <article class="">
+          <article class="container">
             <p>Lorem ipsum dolor sit amet, ut nominavi pertinax voluptatum eum, ei usu debet percipit expetendis. No docendi nostrum sit. Ei vidit simul pro. Pro ad persius praesent. Nam viris maiorum liberavisse no, ei vel verear sapientem instructior, ad sit ignota salutatus.</p>
           </article>
       </section>
-      <section class='banner'>
+      <!-- <section class='container'>
         <article>
-          <a name='gallery'></a>
-          <h1>Gallery</h1>
+          <h2>Submission Gallery</h2>
         </article>
-      </section>
+      </section> -->
       <!--Start React app-->
-      <div id="root"></div>
+      <div id="root" class='container'></div>
     </div>
     <div id="root"></div>
     <footer class="page-footer">
       <div class="footer-copyright">
         <div class="container">
-            © 2017 Explore More Thrift Stores
+            <p>© 2017 Explore More Thrift Stores</p>
+            <p>Questions? Email <a href="mailto:hannahreedy@gmail.com">hannahreedy@gmail.com</a>.</p>
         </div>
       </div>
     </footer>
