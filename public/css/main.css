@@ -91,6 +91,15 @@ MEDIA QUERIES */
   .title-mobile {
     padding-top: 300px;
   }
+
+  .title-mobile h1 {
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  #wrapper h1 {
+    font-size: 2.5rem;
+  }
 }
 
 /*==========================================================================*/
@@ -114,6 +123,10 @@ MEDIA QUERIES */
 
 .card-title {
   font-size: 1.6rem;
+}
+
+.card .card-title {
+  font-size: 1.6rem !important;
 }
 
 .rating {

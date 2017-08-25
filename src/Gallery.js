@@ -53,20 +53,20 @@ class Gallery extends Component {
       console.log(store)
       return (
         <div key={store.name}>
+        <Col s={4} className='grid-example'>
         <Card header={<CardTitle reveal image={store.image} waves='light'/>}
         		title={store.name}
         		reveal={<div className='gallery-card'><Row><Col s={12} className='grid-example'><p className='address'>{store.address1} {store.address2}</p></Col><Col s={12} className='grid-example'><p className='address'>{store.city}, {store.state} {store.zipCode}</p></Col></Row><Row><Col s={12} className='grid-example'><p className='website-url'><a href="{store.url}">{store.name} Website</a></p></Col></Row></div>}>
-            <p className='rating'>Price Range: {store.priceRange}</p>
+            <p className='rating'>{store.priceRange}</p>
         </Card>
+        </Col>
         </div>
       )
     });
     console.log('Current App State:', this.state);
     return (
       <div className="App" id='wrapper'>
-          <Col s={6} className='grid-example'>
             {gallery}
-          </Col>
       </div>
     );
   }

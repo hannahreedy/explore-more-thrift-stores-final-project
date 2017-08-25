@@ -3,7 +3,7 @@
 		{
 			"name": "Buffalo Exchange",
 			"image": "https://www.buffaloexchange.com/wp-content/uploads/PA1_Philadelphia_2.jpg",
-			"priceRange": "3",
+			"priceRange": "$$",
 			"address1": "1478 N Milwaukee Ave",
 			"address2": "",
 			"city": "Chicago",
@@ -14,7 +14,7 @@
 	 	{
 			"name": "Goodwill",
       "image": "http://www.yourgoodwill.org/images/store_images/Langhorne.jpg",
-      "priceRange": "1",
+      "priceRange": "$",
       "address1": "1916B Dempster St",
       "address2": "",
       "city": "Evanston",
@@ -25,7 +25,7 @@
 		{
 			"name": "The Brown Elephant - Andersonville",
       "image": "https://s3-media3.fl.yelpcdn.com/bphoto/rR7FzQ7dNnJcOzUgWHocxQ/o.jpg",
-      "priceRange": "1",
+      "priceRange": "$",
       "address1": " 5404 N Clark St",
       "address2": "",
       "city": "Chicago",
@@ -36,7 +36,7 @@
 		{
 			"name": "Crossroads Trading Co.",
       "image": "https://media.timeout.com/images/103001893/750/422/image.jpg",
-      "priceRange": "2",
+      "priceRange": "$$",
       "address1": "2711 N Clark St",
       "address2": "",
       "city": "Chicago",
@@ -47,7 +47,7 @@
 		{
 			"name": "Encore Resale Clothing",
       "image": "https://media.timeout.com/images/101901071/750/422/image.jpg",
-      "priceRange": "1",
+      "priceRange": "$",
       "address1": "1553 E Hyde Park Blvd",
       "address2": "",
       "city": "Chicago",
@@ -58,7 +58,7 @@
 		{
 			"name": "The Silver Umbrella",
       "image": "https://media.timeout.com/images/103470042/750/422/image.jpg",
-      "priceRange": "1",
+      "priceRange": "$",
       "address1": "5305 S Hyde Park Blvd",
       "address2": "",
       "city": "Chicago",
@@ -69,7 +69,7 @@
 		{
 			"name": "Green Element Resale",
       "image": "https://media.timeout.com/images/101901113/750/422/image.jpg",
-      "priceRange": "1",
+      "priceRange": "$",
       "address1": "6241 N Broadway St",
       "address2": "",
       "city": "Chicago",
@@ -80,7 +80,7 @@
 		{
 			"name": "Thrift & Thrive",
       "image": "https://media.timeout.com/images/101890503/750/422/image.jpg",
-      "priceRange": "1",
+      "priceRange": "$",
       "address1": "6025 W Irving Park Rd",
       "address2": "",
       "city": "Chicago",
@@ -91,7 +91,7 @@
 		{
 			"name": "New Elephant Resale",
 			"image": "https://media.timeout.com/images/102270431/750/422/image.jpg",
-			"priceRange": "1",
+			"priceRange": "$",
 			"address1": "2325 N Clark St",
 			"address2": "",
 			"city": "Chicago",
@@ -102,7 +102,7 @@
 		{
 			"name": "Krispyfringe Vintage",
 			"image": "https://media.timeout.com/images/103470052/750/422/image.jpg",
-			"priceRange": "3",
+			"priceRange": "$$$",
 			"address1": "2130 W Chicago Ave",
 			"address2": "",
 			"city": "Chicago",
@@ -113,7 +113,7 @@
 		{
 			"name": "Second Chance Thrift",
 			"image": "https://revivecenter.org/wp-content/uploads/2014/04/SCT1-488x385.jpg",
-			"priceRange": "2",
+			"priceRange": "$$",
 			"address1": "1674 Ogden Ave",
 			"address2": "",
 			"city": "Chicago",

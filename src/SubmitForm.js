@@ -16,55 +16,62 @@ class SubmitForm extends Component {
     console.log('constructor() Called');
     super();
     this.state = {
-      stores: []
+
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(e) {
+    let staleState = this.state;
     this.setState({
       [e.target.name]: e.target.value
     });
   }
   handleSubmit(e) {
-    this.preventDefault();
+    console.log('woo', e)
+    e.preventDefault();
     const storesReference = firebase.database().ref('stores');
     const store = {
-      name: this.state.name,
-			image: this.state.image,
-			priceRange: this.state.priceRange,
-			address1: this.state.address1,
-			address2: this.state.address2,
-			city: this.state.city,
-			state: this.state.state,
-			zipCode: this.state.zipCode,
-			url: this.state.url
+      name: this.state.name || '',
+			image: this.state.image || '',
+			priceRange: this.state.priceRange || '',
+			address1: this.state.address1 || '',
+			address2: this.state.address2 || '',
+			city: this.state.city || '',
+			state: this.state.state || '',
+			zipCode: this.state.zipCode || '',
+			url: this.state.url || ''
     }
+    console.log(store);
+    storesReference.push(store);
+    // confirmation goes here
+    // alert('you did it!');
+    // close modal
   }
   render() {
     return (
       <Modal
         header='Submit your favorite thrift store'
         trigger={<Button className='material-icons'>launch</Button>}>
-        <Row onSubmit={this.handleSubmit}>
-          <Input s={12} label="Image Path" type='url' onChange={this.handleChange} value={this.state.image} />
-          <Input s={12} label="Store Name" type='text' onChange={this.handleChange} value={this.state.name} />
-          <Input s={12} type='select' label="Price Range" onChange={this.handleChange} value={this.state.priceRange} >
-            <option value='1'>$</option>
-            <option value='2'>$$</option>
-            <option value='3'>$$$</option>
-            <option value='4'>$$$$</option>
+        <Row >
+          <Input s={12} name='image' label="Image Path" type='url' onBlur={this.handleChange} value={this.state.image} />
+          <Input s={12} name='name' label="Store Name" type='text' onBlur={this.handleChange} value={this.state.name} />
+          <Input s={12} name='priceRange' type='select' label="Price Range" onChange={this.handleChange} value={this.state.priceRange} >
+            <option value='$'>$</option>
+            <option value='$$'>$$</option>
+            <option value='$$$'>$$$</option>
+            <option value='$$$$'>$$$$</option>
           </Input>
-          <Input s={6} label="Address" onChange={this.handleChange} value={this.state.address1} />
-          <Input s={6} label="Address 2" onChange={this.handleChange} value={this.state.address2} />
-          <Input s={4} label="City" onChange={this.handleChange} value={this.state.city} />
-          <Input s={4} label="State" onChange={this.handleChange} value={this.state.state} />
-          <Input s={4} label="Zip Code" onChange={this.handleChange} value={this.state.zipCode} />
+          <Input name='address1' s={6} label="Address" onBlur={this.handleChange} value={this.state.address1} />
+          <Input name='adresss2' s={6} label="Address 2" onBlur={this.handleChange} value={this.state.address2} />
+          <Input name='city' s={4} label="City" onBlur={this.handleChange} value={this.state.city} />
+          <Input name='state' s={4} label="State" onBlur={this.handleChange} value={this.state.state} />
+          <Input name='zipCode' s={4} label="Zip Code" onBlur={this.handleChange} value={this.state.zipCode} />
         </Row>
         <Row>
-          <Input s={12} label="Website URL" type='url' onChange={this.handleChange} value={this.state.url} />
+          <Input s={12} label="Website URL" type='url' onBlur={this.handleChange} value={this.state.url} />
         </Row>
-        <Button>Submit</Button>
+        <Button onClick={this.handleSubmit}>Submit</Button>
       </Modal>
     )
   }
