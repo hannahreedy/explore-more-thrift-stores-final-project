@@ -3,13 +3,6 @@ import firebase from './Firebase.js';
 import './App.css';
 import {Card, CardTitle, Row, Col} from 'react-materialize'
 
-// QUESTIONS FOR KATIE
-      //How do I style the gallery as separate cards and then add them into the materialize grid system? Right now, all cards are just in one column, and I am trying to get it to a place where it's a full grid of cards. See inspiration image from Awward on Git.
-// QUESTIONS FOR JAMES/KATIE
-    // How do I translate my price range option ($-$$$$) from digits in the json file to display as the dollar signs in the gallery?
-
-
-
 class Gallery extends Component {
   constructor() {
     console.log('constructor() Called');
