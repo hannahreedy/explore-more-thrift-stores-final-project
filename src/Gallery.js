@@ -26,8 +26,7 @@ class Gallery extends Component {
           image: stores[store].image,
           rating: stores[store].rating,
           priceRange: stores[store].priceRange,
-          address1: stores[store].address1,
-          address2: stores[store].address2,
+          address: stores[store].address,
           city: stores[store].city,
           state: stores[store].state,
           zipCode: stores[store].zipCode,
@@ -50,7 +49,7 @@ class Gallery extends Component {
         <Col s={4} className='grid-example gallery-desktop'>
         <Card className='flow-text' header={<CardTitle reveal image={store.image} waves='light'/>}
         		title={store.name}
-        		reveal={<div className='gallery-card'><Row><Col s={12} className='grid-example'><p className='address'>{store.address1} {store.address2}</p></Col><Col s={12} className='grid-example'><p className='address'>{store.city}, {store.state} {store.zipCode}</p></Col></Row><Row><Col s={12} className='grid-example'><p className='website-url'><a href="{store.url}">{store.name} Website</a></p></Col></Row></div>}>
+        		reveal={<div className='gallery-card'><Row><Col s={12} className='grid-example'><p className='address'>{store.address}</p></Col><Col s={12} className='grid-example'><p className='address'>{store.city}, {store.state} {store.zipCode}</p></Col></Row><Row><Col s={12} className='grid-example'><p className='website-url'><a href="{store.url}">{store.name} Website</a></p></Col></Row></div>}>
             <p className='rating'>{store.priceRange}</p>
         </Card>
         </Col>
@@ -59,7 +58,7 @@ class Gallery extends Component {
         <Col s={12} className='grid-example gallery-mobile'>
         <Card className='flow-text' header={<CardTitle reveal image={store.image} waves='light'/>}
         		title={store.name}
-        		reveal={<div className='gallery-card'><Row><Col s={12} className='grid-example'><p className='address'>{store.address1} {store.address2}</p></Col><Col s={12} className='grid-example'><p className='address'>{store.city}, {store.state} {store.zipCode}</p></Col></Row><Row><Col s={12} className='grid-example'><p className='website-url'><a href="{store.url}">{store.name} Website</a></p></Col></Row></div>}>
+        		reveal={<div className='gallery-card'><Row><Col s={12} className='grid-example'><p className='address'>{store.address}</p></Col><Col s={12} className='grid-example'><p className='address'>{store.city}, {store.state} {store.zipCode}</p></Col></Row><Row><Col s={12} className='grid-example'><p className='website-url'><a href="{store.url}">{store.name} Website</a></p></Col></Row></div>}>
             <p className='rating'>{store.priceRange}</p>
         </Card>
         </Col>

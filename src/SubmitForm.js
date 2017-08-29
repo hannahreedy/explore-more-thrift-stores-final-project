@@ -3,10 +3,6 @@ import './App.css';
 import {Button, Row, Input, Modal} from 'react-materialize'
 import firebase from './Firebase.js';
 
-// QUESTIONS FOR KATIE
-    //I would love to adjust the close button from the bottom right and change it to an 'x' icon in the top right corner. How do I go about doing this? (not a dealbreaker if it's too complex)
-    // I also need to add in a confirmed message, and I would like it to live in the modal. How do I go about doing this?
-
 
 class SubmitForm extends Component {
   constructor() {
@@ -32,8 +28,7 @@ class SubmitForm extends Component {
       name: this.state.name || '',
 			image: this.state.image || '',
 			priceRange: this.state.priceRange || '',
-			address1: this.state.address1 || '',
-			address2: this.state.address2 || '',
+			address: this.state.address || '',
 			city: this.state.city || '',
 			state: this.state.state || '',
 			zipCode: this.state.zipCode || '',
@@ -59,8 +54,7 @@ class SubmitForm extends Component {
             <option value='$$$'>$$$</option>
             <option value='$$$$'>$$$$</option>
           </Input>
-          <Input name='address1' s={6} label="Address" onBlur={this.handleChange} value={this.state.address1} />
-          <Input name='adresss2' s={6} label="Address 2" onBlur={this.handleChange} value={this.state.address2} />
+          <Input name='address' s={12} label="Address" onBlur={this.handleChange} value={this.state.address} />
           <Input name='city' s={4} label="City" onBlur={this.handleChange} value={this.state.city} />
           <Input name='state' s={4} label="State" onBlur={this.handleChange} value={this.state.state} />
           <Input name='zipCode' s={4} label="Zip Code" onBlur={this.handleChange} value={this.state.zipCode} />
@@ -68,7 +62,7 @@ class SubmitForm extends Component {
         <Row>
           <Input s={12} label="Website URL" type='url' onBlur={this.handleChange} value={this.state.url} />
         </Row>
-        <Button onClick={this.handleSubmit}>Submit</Button>
+        <Button onClick={this.handleSubmit} onSubmit={this.close}>Submit</Button>
       </Modal>
     )
   }
