@@ -14,6 +14,8 @@ Brown: 2E2E30
 #wrapper h1 {
   font-size: 3rem;
   color: #fff;
+  z-index: 1;
+  position: relative;
 }
 
 #wrapper h2 {
@@ -113,21 +115,57 @@ MEDIA QUERIES */
   font-family: 'Raleway', sans-serif;
 }
 
-.gallery-card {
-  font-size: 1.6rem;
-}
-
 .card {
   text-align: left;
 }
 
+.card .card-content {
+  padding: 5%;
+}
+
 .card-title {
-  font-size: 1.6rem;
+  position: relative;
 }
 
 .card .card-title {
-  font-size: 1.6rem !important;
+  font-size: 1.1rem !important ;
+  line-height: 1.2rem !important ;
+  white-space: nowrap;
+  position: relative;
 }
+
+/* ==========================================================================
+MEDIA QUERIES */
+/*DESKTOP STUFF*/
+@media only screen and (min-width: 726px) {
+  .gallery-desktop {
+
+  }
+  .gallery-mobile{
+    display: none;
+  }
+}
+/*MOBILE STUFF*/
+@media only screen and (max-width: 725px) {
+  .gallery-desktop {
+    display: none;
+  }
+  .gallery-mobile {
+
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .gallery-desktop {
+    display: none;
+  }
+
+  #wrapper {
+    width: 100%;
+  }
+}
+
+/*==========================================================================*/
 
 .rating {
   text-align: left;
