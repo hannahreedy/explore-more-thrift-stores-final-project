@@ -15,7 +15,7 @@ class SubmitForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(e) {
-    let staleState = this.state;
+    //let staleState = this.state;
     this.setState({
       [e.target.name]: e.target.value
     });

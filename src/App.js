@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Gallery from './Gallery.js';
 import SubmitForm from './SubmitForm.js';
-import {Row, Col} from 'react-materialize'
+import {Row} from 'react-materialize'
 
 class App extends Component {
   render() {
